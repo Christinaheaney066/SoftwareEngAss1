@@ -1,6 +1,8 @@
-import org.joda.time.DateTime;
+package org.example;
 
+import org.joda.time.DateTime;
 import java.util.ArrayList;
+
 
 public class StudentClass {
     private String name;

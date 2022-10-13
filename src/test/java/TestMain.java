@@ -1,3 +1,7 @@
+import org.example.CourseProgramClass;
+import org.example.LecturerClass;
+import org.example.ModuleClass;
+import org.example.StudentClass;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.junit.jupiter.api.Assertions;
