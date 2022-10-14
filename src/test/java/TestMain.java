@@ -55,7 +55,6 @@ public class TestMain {
 
         modules.add(m1);
 
-
         Assertions.assertEquals("Maeve Mckeown", l1.getLectName());
         Assertions.assertEquals(55, l1.getLectAge());
         Assertions.assertEquals(DateTime.parse("10/08/1967", DateTimeFormat.forPattern("dd/MM/yyyy")), l1.getLectDOB());
@@ -63,7 +62,6 @@ public class TestMain {
         Assertions.assertEquals("Maeve Mckeown55", l1.getUsername());
         //testing name, age, dob, id, and username
     }
-
     @Test
     public void testModuleClass(){
         StudentClass s1 = new StudentClass("Christina Heaney", 21, DateTime.parse("09/05/2001", DateTimeFormat.forPattern("dd/MM/yyyy")), 19903432, modules, courses);
@@ -75,8 +73,6 @@ public class TestMain {
         Assertions.assertEquals("Maria Henehan", m1.getLecturer());
         Assertions.assertEquals(students, m1.getStudents());
         //testing students array, the name, id and lecturer
-
-
 
     }
 
