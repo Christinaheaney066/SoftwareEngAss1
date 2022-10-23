@@ -9,8 +9,8 @@ public class CourseProgramClass {
     private DateTime academicStart;
     private DateTime academicEnd;
     private String courseName;
-    private ArrayList<ModuleClass> modules;
-    private ArrayList<StudentClass> students;
+    private ArrayList<String> modules;
+    private ArrayList<String> students;
 
 
     public CourseProgramClass(String courseName,DateTime academicStart, DateTime academicEnd) {
@@ -42,17 +42,17 @@ public class CourseProgramClass {
         return academicStart;
     }
 
-    public void setModules(ArrayList<ModuleClass> modules){
+    public void setModules(ArrayList<String> modules){
         this.modules=modules;
     }
-    public ArrayList<ModuleClass>getModules(){
+    public ArrayList<String>getModules(){
         return modules;
     }
 
-    public void setStudents(ArrayList<StudentClass> students){
+    public void setStudents(ArrayList<String> students){
         this.students=students;
     }
-    public ArrayList<StudentClass>getStudents(){
+    public ArrayList<String>getStudents(){
         return students;
     }
 

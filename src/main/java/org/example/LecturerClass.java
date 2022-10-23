@@ -9,7 +9,7 @@ public class LecturerClass {
     private int lectAge;
     private DateTime lectDOB;
     private int lectId;
-    private ArrayList<ModuleClass> lectModules;
+    private ArrayList<String> lectModules;
 
 
     public LecturerClass(String lectName, int lectAge, DateTime lectDOB, int lectId ){
@@ -46,10 +46,10 @@ public class LecturerClass {
         return lectId;
     }
 
-    public void setLectModules(ArrayList<ModuleClass>lectModules){
+    public void setLectModules(ArrayList<String>lectModules){
         this.lectModules=lectModules;
     }
-    public ArrayList<ModuleClass>getLectModules(){
+    public ArrayList<String>getLectModules(){
         return lectModules;
     }
 

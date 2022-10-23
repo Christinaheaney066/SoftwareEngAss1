@@ -11,9 +11,9 @@ import java.util.ArrayList;
 
 public class TestMain {
 
-    ArrayList<ModuleClass> modules = new ArrayList<>();
-    ArrayList<CourseProgramClass> courses = new ArrayList <>();
-    ArrayList<StudentClass> students = new ArrayList<>();
+    ArrayList<String> modules = new ArrayList<>();
+    ArrayList<String> courses = new ArrayList <>();
+    ArrayList<String> students = new ArrayList<>();
 
     @Test
     public void testStudentClass(){
@@ -26,9 +26,9 @@ public class TestMain {
         StudentClass s1 = new StudentClass("Christina Heaney", 21, DateTime.parse("09/05/2001" , DateTimeFormat.forPattern("dd/MM/yyyy")), 19903432);
         ModuleClass m1 = new ModuleClass("CyberSecurity", "CT1234", "Maria Henehan", students );
         CourseProgramClass c1 = new CourseProgramClass("Computer Science", DateTime.parse("01/01/2022" , DateTimeFormat.forPattern("dd/MM/yyyy")), DateTime.parse("01/01/2024", DateTimeFormat.forPattern("dd/MM/yyyy")));
-        modules.add(m1);
-        students.add(s1);
-        courses.add(c1);
+        modules.add("CyberSecurity");
+        students.add("Christina Heaney");
+        courses.add("Computer Science");
         //creating and adding the students modules and courses to be tested
 
 
@@ -53,7 +53,7 @@ public class TestMain {
         LecturerClass l1 = new LecturerClass("Maeve Mckeown", 55, DateTime.parse("10/08/1967", DateTimeFormat.forPattern("dd/MM/yyyy")), 19441006);
         ModuleClass m1 = new ModuleClass("CyberSecurity", "CT1234", "Maria Henehan", students);
 
-        modules.add(m1);
+        modules.add("CyberSecurity");
 
         Assertions.assertEquals("Maeve Mckeown", l1.getLectName());
         Assertions.assertEquals(55, l1.getLectAge());

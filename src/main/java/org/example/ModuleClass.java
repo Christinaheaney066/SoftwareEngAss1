@@ -6,8 +6,8 @@ public class ModuleClass {
     private String moduleName;
     private String moduleId;
     private String lecturer;
-    private ArrayList<StudentClass> students;
-    private ArrayList<CourseProgramClass> courses;
+    private ArrayList<String> students;
+    private ArrayList<String> courses;
 
 
     public ModuleClass(String moduleName, String moduleId,String lecturer, ArrayList students){
@@ -39,18 +39,18 @@ public class ModuleClass {
         return lecturer;
     }
 
-    public void setCourses(ArrayList<CourseProgramClass> courses){
+    public void setCourses(ArrayList<String> courses){
         this.courses=courses;
     }
-    public ArrayList<CourseProgramClass> getCourses(){
+    public ArrayList<String> getCourses(){
         return courses;
     }
 
-    public void setStudents(ArrayList<StudentClass> students){
+    public void setStudents(ArrayList<String> students){
         this.students=students;
     }
 
-    public ArrayList<StudentClass>getStudents(){
+    public ArrayList<String>getStudents(){
         return students;
     }
 
