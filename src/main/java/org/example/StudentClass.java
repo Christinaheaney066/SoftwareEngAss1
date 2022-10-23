@@ -12,7 +12,7 @@ public class StudentClass {
     private ArrayList<CourseProgramClass> courses;
     private ArrayList<ModuleClass> modules;
 
-    public StudentClass(String name, int age, DateTime DOB, int id, ArrayList courses, ArrayList modules ){
+    public StudentClass(String name, int age, DateTime DOB, int id){
         this.name=name;
         this.age=age;
         this.DOB=DOB;
@@ -65,6 +65,12 @@ public class StudentClass {
 
     public String getUsername(){
         return getName()+getAge();
+    }
+
+    @Override
+    public String toString(){
+        String Studentstring = name + ","+ getUsername()+"," + age + "," + DOB + "," + id + "," + modules + "," + courses;
+        return Studentstring;
     }
 
 

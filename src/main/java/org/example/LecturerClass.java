@@ -12,7 +12,7 @@ public class LecturerClass {
     private ArrayList<ModuleClass> lectModules;
 
 
-    public LecturerClass(String lectName, int lectAge, DateTime lectDOB, int lectId, ArrayList lectModules ){
+    public LecturerClass(String lectName, int lectAge, DateTime lectDOB, int lectId ){
         this.lectName=lectName;
         this.lectAge=lectAge;
         this.lectDOB=lectDOB;
@@ -57,7 +57,11 @@ public class LecturerClass {
         return getLectName()+getLectAge();
     }
 
-
+    @Override
+    public String toString(){
+        String lectstring = lectName + ","+ getUsername()+"," + lectAge + "," + lectDOB + "," + lectId + "," + lectModules ;
+        return lectstring;
+    }
 
 
 }

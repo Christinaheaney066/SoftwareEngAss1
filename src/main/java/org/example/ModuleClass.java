@@ -10,12 +10,11 @@ public class ModuleClass {
     private ArrayList<CourseProgramClass> courses;
 
 
-    public ModuleClass(String moduleName, String moduleId,String lecturer, ArrayList students, ArrayList courses){
+    public ModuleClass(String moduleName, String moduleId,String lecturer, ArrayList students){
         this.moduleName= moduleName;
         this.moduleId= moduleId;
         this.lecturer= lecturer;
         this.students= new ArrayList<>();
-        this.courses= new ArrayList<>();
 
     }
     public void setModuleName(String moduleName){
@@ -53,5 +52,11 @@ public class ModuleClass {
 
     public ArrayList<StudentClass>getStudents(){
         return students;
+    }
+
+    @Override
+    public String toString(){
+        String Modulestring = moduleName + "," + moduleId + "," + lecturer + "," + courses;
+        return Modulestring;
     }
 }

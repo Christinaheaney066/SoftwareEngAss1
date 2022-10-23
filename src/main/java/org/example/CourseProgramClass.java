@@ -13,7 +13,7 @@ public class CourseProgramClass {
     private ArrayList<StudentClass> students;
 
 
-    public CourseProgramClass(String courseName,DateTime academicStart, DateTime academicEnd,  ArrayList modules, ArrayList students) {
+    public CourseProgramClass(String courseName,DateTime academicStart, DateTime academicEnd) {
         this.courseName = courseName;
         this.academicStart = academicStart;
         this.academicEnd = academicEnd;
@@ -56,5 +56,9 @@ public class CourseProgramClass {
         return students;
     }
 
-
+    @Override
+    public String toString(){
+        String coursestring = courseName+ "," +academicEnd+ ","+ academicStart+ "," + modules + "," + students;
+        return coursestring;
+    }
 }

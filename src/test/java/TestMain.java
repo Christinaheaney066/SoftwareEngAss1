@@ -23,9 +23,9 @@ public class TestMain {
         //setting the date and time
 
 
-        StudentClass s1 = new StudentClass("Christina Heaney", 21, DateTime.parse("09/05/2001" , DateTimeFormat.forPattern("dd/MM/yyyy")), 19903432, modules, courses);
-        ModuleClass m1 = new ModuleClass("CyberSecurity", "CT1234", "Maria Henehan", students, courses );
-        CourseProgramClass c1 = new CourseProgramClass("Computer Science", DateTime.parse("01/01/2022" , DateTimeFormat.forPattern("dd/MM/yyyy")), DateTime.parse("01/01/2024", DateTimeFormat.forPattern("dd/MM/yyyy")), modules, students);
+        StudentClass s1 = new StudentClass("Christina Heaney", 21, DateTime.parse("09/05/2001" , DateTimeFormat.forPattern("dd/MM/yyyy")), 19903432);
+        ModuleClass m1 = new ModuleClass("CyberSecurity", "CT1234", "Maria Henehan", students );
+        CourseProgramClass c1 = new CourseProgramClass("Computer Science", DateTime.parse("01/01/2022" , DateTimeFormat.forPattern("dd/MM/yyyy")), DateTime.parse("01/01/2024", DateTimeFormat.forPattern("dd/MM/yyyy")));
         modules.add(m1);
         students.add(s1);
         courses.add(c1);
@@ -50,8 +50,8 @@ public class TestMain {
     public void testLecturerClass(){
 
 
-        LecturerClass l1 = new LecturerClass("Maeve Mckeown", 55, DateTime.parse("10/08/1967", DateTimeFormat.forPattern("dd/MM/yyyy")), 19441006, modules);
-        ModuleClass m1 = new ModuleClass("CyberSecurity", "CT1234", "Maria Henehan", students, courses );
+        LecturerClass l1 = new LecturerClass("Maeve Mckeown", 55, DateTime.parse("10/08/1967", DateTimeFormat.forPattern("dd/MM/yyyy")), 19441006);
+        ModuleClass m1 = new ModuleClass("CyberSecurity", "CT1234", "Maria Henehan", students);
 
         modules.add(m1);
 
@@ -64,9 +64,9 @@ public class TestMain {
     }
     @Test
     public void testModuleClass(){
-        StudentClass s1 = new StudentClass("Christina Heaney", 21, DateTime.parse("09/05/2001", DateTimeFormat.forPattern("dd/MM/yyyy")), 19903432, modules, courses);
-        LecturerClass l1 = new LecturerClass("Maeve Mckeown", 55, DateTime.parse("10/08/1967" , DateTimeFormat.forPattern("dd/MM/yyyy")), 19441006, modules);
-        ModuleClass m1 = new ModuleClass("CyberSecurity", "CT1234", "Maria Henehan", students, courses );
+        StudentClass s1 = new StudentClass("Christina Heaney", 21, DateTime.parse("09/05/2001", DateTimeFormat.forPattern("dd/MM/yyyy")), 19903432);
+        LecturerClass l1 = new LecturerClass("Maeve Mckeown", 55, DateTime.parse("10/08/1967" , DateTimeFormat.forPattern("dd/MM/yyyy")), 19441006);
+        ModuleClass m1 = new ModuleClass("CyberSecurity", "CT1234", "Maria Henehan", students);
 
         Assertions.assertEquals("CyberSecurity", m1.getModuleName());
         Assertions.assertEquals("CT1234", m1.getModuleId());
@@ -78,9 +78,9 @@ public class TestMain {
 
     @Test
     public void testCourseClass(){
-        StudentClass s1 = new StudentClass("Christina Heaney", 21, DateTime.parse("09/05/2001", DateTimeFormat.forPattern("dd/MM/yyyy")), 19903432, modules, courses);
-        ModuleClass m1 = new ModuleClass("CyberSecurity", "CT1234", "Maria Henehan", students, courses );
-        CourseProgramClass c1 = new CourseProgramClass("Computer Science", DateTime.parse("01/01/2022", DateTimeFormat.forPattern("dd/MM/yyyy")), DateTime.parse("01/01/2024" , DateTimeFormat.forPattern("dd/MM/yyyy")), modules, students);
+        StudentClass s1 = new StudentClass("Christina Heaney", 21, DateTime.parse("09/05/2001", DateTimeFormat.forPattern("dd/MM/yyyy")), 19903432);
+        ModuleClass m1 = new ModuleClass("CyberSecurity", "CT1234", "Maria Henehan", students );
+        CourseProgramClass c1 = new CourseProgramClass("Computer Science", DateTime.parse("01/01/2022", DateTimeFormat.forPattern("dd/MM/yyyy")), DateTime.parse("01/01/2024" , DateTimeFormat.forPattern("dd/MM/yyyy")));
 
         Assertions.assertEquals("Computer Science", c1.getCourseName());
         Assertions.assertEquals(DateTime.parse("01/01/2022",  DateTimeFormat.forPattern("dd/MM/yyyy")), c1.getAcademicStart());
